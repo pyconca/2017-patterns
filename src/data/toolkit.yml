@@ -1,9 +1,0 @@
-colors:
-  primary:
-    'Blizzard Blue': 'rgb(150, 215, 227)'
-    'Carnation': 'rgb(240, 100, 97)'
-    'Masala': 'rgb(61, 61, 61)'
-    'Mercury': 'rgb(229, 229, 229)'
-  neutral:
-    'White': 'rgb(245, 245, 245)'
-    'Black': 'rgb(70, 70, 70)'
