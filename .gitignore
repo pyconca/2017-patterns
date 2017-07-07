@@ -1,3 +1,6 @@
 node_modules
 dist
 .sass-cache
+.publish
+id_rsa
+id_rsa.pub
