@@ -7,6 +7,9 @@ node_js:
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_5bd8a75dbe78_key -iv $encrypted_5bd8a75dbe78_iv -in id_rsa.enc -out id_rsa -d
+  - chmod 600 id_rsa
+  - eval `ssh-agent -s`
+  - ssh-add id_rsa
 
 before_script:
   - npm install -g gulp-cli
@@ -18,7 +21,9 @@ notifications:
     on_success: change
     on_failure: always
 
-before_deploy: git config --global user.email publish.travis.github && git config --global user.name "Travis"
+before_deploy:
+  - git config --global user.email publish.travis.github
+  - git config --global user.name "Travis"
 
 deploy:
   - edge: true
