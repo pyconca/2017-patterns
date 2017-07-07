@@ -195,5 +195,7 @@ gulp.task('default', ['clean'], () => {
 // deploy
 gulp.task('deploy', () => {
   return gulp.src(config.dest + '/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      remoteUrl: 'git@github.com:pyconca/2017-patterns.git'
+    }));
 });
