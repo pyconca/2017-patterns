@@ -1,0 +1,9 @@
+@include font-face('WorkSans', '../fonts/WorkSans-Black', 900, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-ExtraBold', 800, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-Bold', 700, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-SemiBold', 600, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-Medium', 500, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-Regular', 400, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-Light', 300, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-ExtraLight', 200, $file-formats: ttf);
+@include font-face('WorkSans', '../fonts/WorkSans-Thin', 100, $file-formats: ttf);

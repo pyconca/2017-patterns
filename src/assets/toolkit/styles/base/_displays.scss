@@ -1,0 +1,21 @@
+.display {
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: ($spacer / 2);
+
+  &--one {
+    font-size: 6rem;
+  }
+
+  &--two {
+    font-size: 5.5rem;
+  }
+
+  &--three {
+    font-size: 4.5rem;
+  }
+
+  &--four {
+    font-size: 3.5rem;
+  }
+}

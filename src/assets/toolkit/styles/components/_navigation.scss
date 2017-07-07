@@ -1,0 +1,28 @@
+.c-nav {
+  &__wrapper {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: center;
+  }
+
+  &__link {
+    color: $colour-text;
+    margin: .5rem 1rem;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($colour-text, 25%);
+    }
+  }
+
+  &__btn {
+    padding: .75rem 1.25rem;
+  }
+}

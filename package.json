@@ -52,5 +52,9 @@
     "run-sequence": "^1.2.1",
     "script-loader": "^0.7.0",
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "^1.9.0"
   }
 }

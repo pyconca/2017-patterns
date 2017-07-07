@@ -1,8 +1,9 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
-  secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    'Blizzard Blue': 'rgb(150, 215, 227)'
+    'Carnation': 'rgb(240, 100, 97)'
+    'Masala': 'rgb(61, 61, 61)'
+    'Mercury': 'rgb(229, 229, 229)'
+  neutral:
+    'White': 'rgb(245, 245, 245)'
+    'Black': 'rgb(70, 70, 70)'

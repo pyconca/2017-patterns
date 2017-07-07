@@ -1,0 +1,36 @@
+.c-hero-home {
+  margin: 6rem 3rem;
+
+  &__wrapper {
+    background-image: url('../images/hero/pycon-2015-crowd-by-shiroyuki-orig.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: 1rem 6rem 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__logo {
+    height: 10rem;
+    position: absolute;
+    top: -5rem;
+    z-index: 2;
+  }
+
+  &__copy {
+    color: $colour-white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10rem;
+    z-index: 2;
+  }
+
+  &__illustration {
+    bottom: -5rem;
+    height: 10rem;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+  }
+}

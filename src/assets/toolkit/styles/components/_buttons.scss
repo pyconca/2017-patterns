@@ -1,0 +1,61 @@
+.c-btn {
+  color: $colour-link;
+  display: inline-block;
+  font-weight: bold;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &--hover,
+  &:hover {
+    color: $colour-link-hover;
+    text-decoration: none;
+  }
+
+  &--primary {
+    background-color: $colour-primary;
+    color: $colour-dark;
+
+    &-hover,
+    &:hover {
+      background-color: darken($colour-primary, 10%);
+      color: $colour-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $colour-secondary;
+    color: $colour-light;
+
+    &-hover,
+    &:hover {
+      background-color: darken($colour-secondary, 10%);
+      color: $colour-light;
+    }
+  }
+
+  &--dark {
+    background-color: $colour-dark;
+    color: $colour-light;
+
+    &-hover,
+    &:hover {
+      background-color: darken($colour-dark, 10%);
+      color: $colour-light;
+    }
+  }
+
+  &--light {
+    background-color: $colour-light;
+    color: $colour-dark;
+
+    &-hover,
+    &:hover {
+      background-color: darken($colour-light, 10%);
+      color: $colour-dark;
+    }
+  }
+}

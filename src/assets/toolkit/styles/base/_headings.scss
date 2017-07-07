@@ -1,0 +1,47 @@
+%heading,
+.heading {
+  line-height: 1.1;
+  margin-bottom: ($spacer / 2);
+}
+
+h1,
+.heading--one {
+  @extend %heading;
+
+  font-size: 2.5rem;
+}
+
+h2,
+.heading--two {
+  @extend %heading;
+
+  font-size: 2rem;
+}
+
+h3,
+.heading--three {
+  @extend %heading;
+
+  font-size: 1.75rem;
+}
+
+h4,
+.heading--four {
+  @extend %heading;
+
+  font-size: 1.5rem;
+}
+
+h5,
+.heading--five {
+  @extend %heading;
+
+  font-size: 1.25rem;
+}
+
+h6,
+.heading--six {
+  @extend %heading;
+
+  font-size: 1rem;
+}
