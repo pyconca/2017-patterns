@@ -1,0 +1,59 @@
+.c-foot {
+  margin: 1rem 2rem;
+
+  &__block {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__block-title {
+    color: $colour-carnation;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  &__sponsor-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+  }
+
+  &__sponsor-link {
+    display: inline-block;
+  }
+
+  &__sponsor-image {
+    height: 10rem;
+    margin: 1rem;
+    width: 10rem;
+  }
+
+  &__navigation {
+    @include outer-container;
+  }
+
+  &__list {
+    @include span-columns(3);
+
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+  }
+
+  &__item {
+    padding-bottom: .5em;
+
+    &--heading {
+      color: $colour-carnation;
+      padding-bottom: 1em;
+    }
+  }
+
+  &__link {
+    color: $colour-text;
+    text-decoration: none;
+  }
+}
