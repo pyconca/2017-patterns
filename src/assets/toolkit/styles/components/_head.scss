@@ -19,19 +19,32 @@
   }
 
   &__description {
+    @include media($bp-tablet-up) {
+      display: block;
+    }
+
+    display: none;
     line-height: 1;
     margin: 0;
     vertical-align: middle;
   }
 
   &__nav {
-    display: block;
+    @include media($bp-mobile-up) {
+      display: block;
+    }
+
+    display: none;
     flex-grow: 2;
     padding-right: 1rem;
     text-align: right;
   }
 
   &__btn-group {
+    @include media($bp-mobile-up) {
+      display: block;
+    }
+
     font-size: 1rem;
   }
 }

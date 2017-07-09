@@ -1,20 +1,32 @@
 .c-hero-home {
-  margin: 6rem 3rem;
+  margin: 1rem 0;
+
+  @include media($bp-mobile-up) {
+    margin: 6rem 3rem;
+  }
 
   &__wrapper {
+    @include media($bp-mobile-up) {
+      padding: 2rem 6rem;
+    }
+
     background-image: url('../images/hero/pycon-2015-crowd-by-shiroyuki-orig.jpg');
     background-position: center;
     background-size: cover;
     height: 500px;
-    padding: 2rem 6rem;
+    padding: 1rem;
     position: relative;
     z-index: 1;
   }
 
   &__logo {
-    height: 10rem;
+    @include media($bp-mobile-up) {
+      top: -4rem;
+      width: 20rem;
+    }
+
     position: absolute;
-    top: -5rem;
+    width: 80%;
     z-index: 2;
 
     * {
@@ -31,10 +43,15 @@
   }
 
   &__illustration {
-    bottom: -2.5rem;
-    height: 10rem;
-    left: 40%;
+    @include media($bp-mobile-up) {
+      bottom: -2.5rem;
+      left: 40%;
+      width: 50%;
+    }
+
+    bottom: 1rem;
     position: absolute;
+    width: 80%;
     z-index: 2;
 
     * {

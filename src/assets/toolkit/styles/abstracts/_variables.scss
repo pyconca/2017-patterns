@@ -10,3 +10,6 @@ $colour-link: darken($colour-primary, 25%);
 $colour-link-hover: $colour-primary;
 
 $spacer: 1rem;
+
+$bp-mobile-up: new-breakpoint(min-width 500px);
+$bp-tablet-up: new-breakpoint(min-width 800px);
