@@ -53,8 +53,12 @@
   }
 
   &__content {
+    @include media($bp-mobile-up) {
+      width: 30rem;
+    }
+
     float: left;
-    width: 30rem;
+    padding: 1rem;
   }
 
   &__copy {
