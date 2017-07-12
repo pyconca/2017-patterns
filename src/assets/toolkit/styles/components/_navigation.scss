@@ -19,7 +19,8 @@
     text-decoration: none;
 
     &:hover {
-      color: darken($colour-text, 25%);
+      color: $colour-link;
+      text-decoration: underline;
     }
   }
 
