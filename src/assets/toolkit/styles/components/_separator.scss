@@ -1,0 +1,8 @@
+.c-separtor {
+  display: none;
+
+  @include media($bp-mobile-up) {
+    display: block;
+    width: 7.5rem;
+  }
+}

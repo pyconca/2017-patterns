@@ -1,0 +1,64 @@
+.c-block-image {
+  margin: 1rem 0;
+
+  @include media($bp-mobile-up) {
+    margin: 6rem 3rem;
+  }
+
+  &__wrapper {
+    @include media($bp-mobile-up) {
+      background-position: right;
+      background-size: 75% auto;
+      height: 300px;
+    }
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    @include media($bp-mobile-up) {
+      padding: 4rem 0;
+      width: 75%;
+    }
+
+    padding: 1rem;
+  }
+
+  &__heading {
+    color: $colour-carnation;
+    font-size: 3rem;
+  }
+}
+
+.c-block-text {
+  margin: 1rem 0;
+
+  @include media($bp-mobile-up) {
+    margin: 6rem 3rem;
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  &__seperator-wrapper {
+    float: left;
+    width: 10rem;
+  }
+
+  &__content {
+    float: left;
+    width: 30rem;
+  }
+
+  &__copy {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
