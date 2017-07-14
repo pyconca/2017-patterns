@@ -1,9 +1,13 @@
-.c-block-image {
+%c-block {
   margin: 1rem 0;
 
   @include media($bp-mobile-up) {
-    margin: 6rem 3rem;
+    margin: 10rem 3rem;
   }
+}
+
+.c-block-image {
+  @extend %c-block;
 
   &__wrapper {
     @include media($bp-mobile-up) {
@@ -35,11 +39,7 @@
 }
 
 .c-block-text {
-  margin: 1rem 0;
-
-  @include media($bp-mobile-up) {
-    margin: 6rem 3rem;
-  }
+  @extend %c-block;
 
   &::after {
     clear: both;
@@ -64,5 +64,41 @@
   &__copy {
     margin-top: 0;
     padding-top: 0;
+  }
+}
+
+.c-block-heading {
+  @extend %c-block;
+
+  &__illustration {
+    height: 10rem;
+    float: right;
+
+    * {
+      fill: $colour-carnation;
+    }
+  }
+
+  &__heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.c-block-illustration {
+  @extend %c-block;
+
+  &__illustration {
+    height: 6rem;
+    float: right;
+
+    * {
+      fill: $colour-carnation;
+    }
+  }
+
+  &__heading {
+    font-size: 3rem;
+    text-transform: uppercase;
   }
 }
