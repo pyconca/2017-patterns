@@ -2,7 +2,7 @@
   margin: 1rem 0;
 
   @include media($bp-mobile-up) {
-    margin: 6rem 3rem;
+    margin: 0;
   }
 
   &__wrapper {
@@ -10,24 +10,20 @@
       padding: 2rem 6rem;
     }
 
-    background-image: url('../images/hero/pycon-2015-crowd-by-shiroyuki-orig.jpg');
-    background-position: center;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba($colour-white, 0.5) 0%, rgba($colour-white, 1.0) 100%), url("../images/hero/pycon-2015-crowd-by-shiroyuki-orig.jpg") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height: 500px;
-    padding: 1rem;
-    position: relative;
-    z-index: 1;
   }
 
   &__logo {
     @include media($bp-mobile-up) {
-      top: -4rem;
-      width: 20rem;
+      width: 30rem;
     }
 
-    position: absolute;
-    width: 80%;
-    z-index: 2;
+    width: 40%;
 
     * {
       fill: $colour-carnation !important;
@@ -44,15 +40,12 @@
 
   &__illustration {
     @include media($bp-mobile-up) {
-      bottom: -2.5rem;
-      left: 40%;
       width: 50%;
     }
 
-    bottom: 1rem;
-    position: absolute;
-    width: 80%;
-    z-index: 2;
+    position: relative;
+    right: 0;
+    bottom: 0;
 
     * {
       fill: $colour-blizzard-blue !important;

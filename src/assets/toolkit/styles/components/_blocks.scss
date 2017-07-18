@@ -2,7 +2,7 @@
   margin: 1rem 0;
 
   @include media($bp-mobile-up) {
-    margin: 10rem 3rem;
+    margin: 10rem 0;
   }
 }
 
@@ -67,6 +67,10 @@
   }
 }
 
+.c-block-text-md {
+  margin: 5rem 0;
+}
+
 .c-block-heading {
   @extend %c-block;
 
@@ -101,4 +105,14 @@
     font-size: 3rem;
     text-transform: uppercase;
   }
+}
+
+
+.c-block_branded_montreal {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba($colour-white, 0.5) 0%, rgba($colour-white, 1.0) 100%), url("../images/andrew-welch-40121.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
