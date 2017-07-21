@@ -66,3 +66,15 @@
     text-decoration: none;
   }
 }
+
+
+.c-foot-illustration {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: $colour-blizzard-blue;
+  fill: $colour-blizzard-blue !important;
+  height: 250px;
+  margin-bottom: 2rem;
+}
