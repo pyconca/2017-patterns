@@ -116,3 +116,19 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+.c-block-sponsor {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__left {
+    text-align: center!important;
+  }
+
+  &__logo {
+    max-height: 20rem;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+  }
+}
