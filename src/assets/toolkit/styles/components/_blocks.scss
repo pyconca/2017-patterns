@@ -132,3 +132,37 @@
     margin: 1rem auto;
   }
 }
+
+.c-block-keynote {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+
+
+  @media (max-width: 767px) {
+    .c-block-keynote__left {
+      order: -1;
+    }
+  }
+
+
+  &__heading {
+    color: #f06461;
+    font-size: 3rem;
+  }
+
+  &__left {
+    margin: auto 0;
+  }
+
+  &__right {
+    text-align: center!important;
+  }
+
+  &__image {
+    max-height: 20rem;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+  }
+}
