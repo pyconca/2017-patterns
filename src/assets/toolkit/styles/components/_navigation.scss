@@ -8,8 +8,11 @@
 
 
   &__item {
-    display: inline-block;
-    line-height: 1;
+    @include media($bp-mobile-up) {
+      display: inline-block;
+      line-height: 1;
+    }
+    line-height: 2;
     vertical-align: center;
   }
 
