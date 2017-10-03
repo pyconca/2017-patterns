@@ -1,0 +1,55 @@
+
+.schedule-nav {
+  font-size: 1.3rem;
+  margin: 3rem 0;
+
+  &--link {
+    padding: 0 1rem;
+  }
+
+  &--current {
+    padding: 0 1rem;
+    font-weight: bold;
+  }
+}
+
+.schedule-table {
+  border: 1px solid $colour-grey;
+  width: 100%;
+  min-width: 600px;
+
+  tr {
+  }
+
+  td {
+    //padding: 3rem;
+    border: 1px solid $colour-grey;
+  }
+
+  &--col-time {
+    width: 20%;
+    text-align: center;
+    color: $colour-carnation;
+    font-size: 1.5rem;
+  }
+
+  &--col-description {
+    padding: 3rem;
+  }
+
+  &--title {
+
+    &--muted {
+      color: $colour-grey;
+    }
+  }
+
+  &--subtitle {
+    font-size: 1.2rem;
+
+    &--muted {
+      @extend .schedule-table--subtitle;
+      color: $colour-grey;
+    }
+  }
+}
