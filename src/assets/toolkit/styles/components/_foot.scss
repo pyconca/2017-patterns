@@ -27,12 +27,12 @@
 
   &__sponsor-image {
     @include media($bp-mobile-up) {
-      margin: 1rem;
+      margin: 2rem;
     }
 
-    height: 10rem;
+    height: 7rem;
     margin: .5rem;
-    width: 10rem;
+    max-width: 100%;
   }
 
   &__navigation {
