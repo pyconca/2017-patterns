@@ -1,6 +1,9 @@
 
 .schedule-nav {
-  font-size: 1.3rem;
+  @include media($bp-mobile-up) {
+    font-size: 1.3rem;
+  }
+
   margin: 3rem 0;
 
   &--link {
@@ -8,18 +11,14 @@
   }
 
   &--current {
-    padding: 0 1rem;
     font-weight: bold;
+    padding: 0 1rem;
   }
 }
 
 .schedule-table {
   border: 1px solid $colour-grey;
   width: 100%;
-  min-width: 600px;
-
-  tr {
-  }
 
   td {
     //padding: 3rem;
@@ -27,17 +26,31 @@
   }
 
   &--col-time {
-    width: 20%;
-    text-align: center;
+    @include media($bp-mobile-up) {
+      font-size: 1.5rem;
+      width: 20%;
+    }
+
     color: $colour-carnation;
-    font-size: 1.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: center;
   }
 
   &--col-description {
-    padding: 3rem;
+    @include media($bp-mobile-up) {
+      padding: 3rem;
+    }
+
+    padding: 1.5rem;
   }
 
   &--title {
+    @include media($bp-mobile-up) {
+      font-size: 1rem;
+    }
+
+    font-size: .9rem;
 
     &--muted {
       color: $colour-grey;
@@ -45,10 +58,13 @@
   }
 
   &--subtitle {
-    font-size: 1.2rem;
+    @include media($bp-mobile-up) {
+      font-size: 1.2rem;
+    }
 
     &--muted {
       @extend .schedule-table--subtitle;
+
       color: $colour-grey;
     }
   }
